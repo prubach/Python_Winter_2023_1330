@@ -1,0 +1,2 @@
+s = 'abcdefgh'
+print(s)
