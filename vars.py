@@ -50,3 +50,15 @@ ds = '26672340'
 di = int(ds)
 print(di)
 print(type(di))
+
+
+
+ab = 0b1001
+print(ab)
+
+ax = 0xa
+print(ax)
+ax1 = 0x10
+print(ax1)
+ax2 = 0x1f
+print(ax2)
