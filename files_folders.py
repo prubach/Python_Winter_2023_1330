@@ -4,7 +4,10 @@ work_dir = os.getcwd()
 print(f'Current working dir: {work_dir}')
 
 
-my_file = 'myfile.txt'
+#my_file = 'C:\\Users\prubac\Desktop\myfile.txt'
+#my_file = 'C:/Users\prubac\Desktop\myfile.txt'
+my_file = 'data/myfile.txt'
+#my_file = 'C:/Users\prubac\PycharmProjects\Python_Winter_2023_1330/data/myfile.txt'
 
 if os.path.exists(my_file):
     print(f'{my_file} found!')
