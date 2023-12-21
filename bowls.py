@@ -9,12 +9,14 @@
 # sum of all bowls
 
 # Solution by Cuong Vo
+# Time complexity: O(1)
 def sum_of_bowls_sequence(n):
     total_sum = int(n*(n+1)/2)
     return total_sum
 
 
 # Solution by Joanna Marie Corpuz
+# Time complexity: O(n)
 def sum_of_bowls_loop(n):
     sum_bowls = sum(list(range(n, 0, -1)))
     return sum_bowls

@@ -26,3 +26,6 @@ for f in os.listdir(folder):
         size_sum += os.path.getsize(tmp)
 
 print(f'Total file size is {round(size_sum / 1024, 2)} KB')
+
+#TODO - write a function that recursively sums the size of all files in a folder
+# including all subfolders and their subfolders...
