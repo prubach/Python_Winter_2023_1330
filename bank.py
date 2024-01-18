@@ -84,14 +84,15 @@ print(a)
 
 c2 = bank.create_customer('Anne', 'Smith')
 a3 = bank.create_account(c2)
+#a3.deposit(-500)
 print(bank)
 print('--------')
 try:
     #a = None
     #raise ValueError('aafafa')
     #a.deposit(330)
-    a3.deposit(100)
-    #a3.deposit(-50)
+    a3.deposit(-100)
+    a3.deposit(50)
 except BankException as ie:
     print(f'Something went wrong {ie}')
 #except (InvalidAmountException, InsufficientFundsException) as ie:
@@ -102,19 +103,19 @@ else:
     print('Run it when no exception occured')
 finally:
     print('This was run at the end')
-
-
-# if a3.deposit(100):
-#     print('deposit succeeded')
-# else:
-#     print('deposit failed')
+#
+#
+# # if a3.deposit(100):
+# #     print('deposit succeeded')
+# # else:
+# #     print('deposit failed')
+# # print(bank)
+# # if a3.deposit(-50):
+# #     print('deposit succeeded')
+# # else:
+# #     print('deposit failed')
+# print('before transfer')
+print(bank)
+# bank.transfer(1003, 1002, 140)
+# print('after transfer')
 # print(bank)
-# if a3.deposit(-50):
-#     print('deposit succeeded')
-# else:
-#     print('deposit failed')
-print('before transfer')
-print(bank)
-bank.transfer(1003, 1002, 140)
-print('after transfer')
-print(bank)
